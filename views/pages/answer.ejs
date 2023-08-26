@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body class="container">
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+    <main>
+        <div class="jumbotron">
+            <h1>ANSWER</h1>
+            <ul>
+
+                <li>
+                    <p size=30>
+                        <b>
+                            <%= json.question %>&emsp;=>
+                        </b>
+                        <%= json.expression %>&emsp;<b>=</b>
+                            <%= json.answer %>
+                    </p>
+                </li>
+
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+
+</html>

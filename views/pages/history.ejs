@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body class="container">
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+    <main>
+        <div class="jumbotron">
+            <h1>HISTORY</h1>
+            <ul>
+                <% jsonData.forEach(function(entry) { %>
+                    <li>
+                        <p size=30>
+                            <b>
+                                <%= entry.question %>&emsp;=>
+                            </b>
+                            <%= entry.expression %>&emsp;<b>=</b>
+                                <%= entry.answer %>
+                        </p>
+                    </li>
+                    <% }); %>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+
+</html>
