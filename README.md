@@ -40,17 +40,17 @@ You can perform mathematical operations using the following URL structure:
 ```
 Supported operators:
 
-plus: Addition (+)
-minus: Subtraction (-)
-into: Multiplication (*)
-divide: Division (/)
+### plus: Addition (+)
+### minus: Subtraction (-)
+### into: Multiplication (*)
+### divide: Division (/)
 For example:
 
-/5/plus/3 will return { "question": "5+3", "answer": 8 }
-/3/minus/5 will return { "question": "3-5", "answer": -2 }
-/3/minus/5/plus/8 will return { "question": "3-5+8", "answer": 6 }
-/3/into/5/plus/8/into/6 will return { "question": "3*5+8*6", "answer": 63 }
-History
+/5/plus/3 will return { "question": "5+3", "answer": 8 }.
+/3/minus/5 will return { "question": "3-5", "answer": -2 }.
+/3/minus/5/plus/8 will return { "question": "3-5+8", "answer": 6 }.
+/3/into/5/plus/8/into/6 will return { "question": "3*5+8*6", "answer": 63 }.
+### /history
 To view the history of the last 20 operations performed on the server, access the following endpoint:
 
 ```
@@ -60,7 +60,7 @@ This will display a list of operations and their corresponding answers.
 
 Endpoints
 / Lists available endpoint samples.
-/home: Index page
+/home: Index page.
 /history: Lists the last 20 operations performed on the server.
 /* : Any other endpoint following the mathematical operation pattern.
 
